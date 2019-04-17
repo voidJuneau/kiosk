@@ -1,0 +1,63 @@
+// div {
+//     border: 1px solid gray;
+//   }
+
+// *** variable & mixins
+$border: 10px;
+
+@mixin hovered() {
+  color: white;
+  background-image: linear-gradient(165deg, BlanchedAlmond, DarkSalmon);
+}
+
+@mixin bordered($width) {
+  border: $width solid FireBrick;
+}
+
+// *** attributes
+header {
+  background: FireBrick;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  height: 2em;
+  margin-bottom: $border;
+}
+
+.card {
+  border-radius: $border;
+  @include bordered(2px);
+  text-align: center;
+
+  &:hover {
+    @include hovered();
+  }
+}
+
+.size {
+  font-size: 5em;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+}
+
+.btn-secondary {
+  color: black;
+  background-color: white;
+  @include bordered(2px);
+  margin: 0 $border;
+  padding: 2px;  
+
+  &:hover {
+    @include hovered();
+  }
+}
+
+.modal-content {
+  @include bordered(2px);
+}
+
+.modal-header {
+  @include bordered(1px);
+}

@@ -14,8 +14,7 @@
     "bootstrap-vue": "^2.0.0-rc.16",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7",
-    "vue": "^2.6.10",
-    "scss": "node-sass -o css/ css/"
+    "vue": "^2.6.10"
   },
   "browserslist": [
     "> 1%",

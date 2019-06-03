@@ -5,4 +5,4 @@
   - Bootstrap4
   - Sass
 
-[![screenshot](https://i.imgur.com/Ex4zhVf.png)](#) 
+[![screenshot](https://github.com/ljuneaul/kiosk/blob/master/screenshot.png)](#) 
